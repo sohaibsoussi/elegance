@@ -1,0 +1,54 @@
+.Title{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    margin-top: 100px;
+}
+.Title h1{
+    margin: 17px;
+}
+.Title .ligne{
+    height: 2px;
+    width: 100px;
+    background-color: #D9BC8A;
+}
+.title {
+    margin: 22px 15px 25px 15px;
+}
+.platEtPrix {
+    display: flex;
+    align-items: center;
+    margin: 10px 0px;
+    width: 760px;
+    justify-content: space-between;
+}
+p.prix {
+    margin-left: 200px;
+}
+p.ingr {
+    font-weight: 300;
+    margin-bottom: 45px;
+}
+.h3{
+    font-size: 22px;
+}
+footer{
+    margin-top: 22px;
+}
+@media all and (max-width:801px){
+    .ENTRÉES{
+        padding: 10px;
+    }
+    .platEtPrix{
+        margin:0px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    p.prix {
+        margin-left:0px;
+        margin-right:0px;
+    }
+    .cuillere{
+        display: none;
+    }
+}
