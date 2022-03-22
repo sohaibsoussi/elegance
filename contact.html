@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="stylesheet" href="./style/contact.css">
+    <link rel="icon" href="./asset/logo.png" type="png">
+    <!-- <script async src="./js/header.js"></script>  --> 
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="./js/sketch.js"></script>
+    <title>Contacter-nous</title>
+</head>
+<body>
+  <header>
+    <a href="./index.html">
+        <img src="./asset/logo.png" class="logo" alt="logo du resto">
+    </a>
+    <ul class="navigation">
+        <li id="link1"><a href="index.html">Le restaurant</a></li>
+        <li id="link2"><a href="carte.html">Notre carte</a></li>
+        <li id="link3"><a href="#">Contacter-nous</a></li>
+    </ul>
+    <div class="toggle" onclick="toggleMenu()"></div>
+  </header>
+    <section>
+        <div class="txt">
+            <p class="ptxt">Vous souhaitez avoir un renseignement ?</p>
+            <p class="ptxt pcol">Vous pouvez remplir le formulaire ci-dessous.</p>
+        </div>
+        <form method="post" action="mailto:anasnejb@gmail.com?subject=Un contact depuis votre site" enctype="text/plain" lang="fr" target="blank">
+        <div class="input1">
+            <p class="white">Votre nom</p>
+            <input class="caret" name="my name is :" type="text" required >
+        </div>
+        <div class="input1">
+            <p class="white">Votre e-mail</p>
+            <input class="caret" name="my email is : " type="email" required>
+        </div>
+        <div class="input1">
+            <p class="white">Sujet</p>
+            <input class="caret" name="the topic is:" type="text" required>
+        </div>
+        <div class="input1">
+            <p class="white">Votre message</p>
+            <textarea class="caret" name="description of the issue :" required minlength="20" lang="fr"></textarea>
+        </div>
+        <input type="submit" name="" class="button" value="Envoyer">
+        </form>
+        <footer>
+            <div class="location">
+              <p class="locationTitle">NOUS TROUVER :</p>
+              <div class="locationContainer">
+                <img src="./asset/location.png" alt="">
+                <p>4 rue du Château <br>
+                  44000 Nantes</p>
+              </div>
+              <div class="locationContainer">
+                <img src="./asset/telephone.png" alt="">
+                <a href="tel:+6494461709">6494461709</a>
+              </div>
+            </div>
+            <div class="workTime">
+              <p class="workTimeTitle">HEURES D’OUVERTURE :</p>
+              <p class="dataOfWorkTime">Lundi au Vendredi : 11h45/14h et 19h/23h</p>
+              <p class="dataOfWorkTime">Samedi : 11h45/14h et 19h/00h</p>
+              <p class="dataOfWorkTime">Fermé le dimanche</p>
+            </div>
+            <div class="media">
+              <p>RETROUVEZ-NOUS <br>
+                SUR LES RÉSEAUX SOCIAUX :
+              </p>
+              <div class="mediaContainer">
+                <a href="#">
+                  <img src="./asset/facebook.png" alt="">
+                </a>
+                <a href="#">
+                  <img src="./asset/instagram.png" alt="">
+                </a>
+                <a href="#">
+                  <img src="./asset/linkedin.png" alt="">
+                </a>
+              </div>
+            </div>
+          </footer>
+    </section>
+</body>
+  <script async src="./js/header.js"></script>
+</html>

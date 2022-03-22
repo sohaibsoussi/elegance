@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/slider.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="./js/sketch.js"></script>
+    <link rel="icon" href="./asset/logo.png" type="png">   
+    <!-- <script async src="./js/header.js"></script>  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L'ELEGANCE resto</title>
+    <style>
+    </style>
+</head>
+<body>
+  <header>
+    <a href="./index.html">
+        <img src="./asset/logo.png" class="logo" alt="logo du resto">
+    </a>
+    <ul class="navigation">
+        <li id="link1"><a href="#">Le restaurant</a></li>
+        <li id="link2"><a href="carte.html">Notre carte</a></li>
+        <li id="link3"><a href="contact.html">Contacter-nous</a></li>
+    </ul>
+    <div class="toggle" onclick="toggleMenu()"></div>
+  </header>
+    <section  class="section">
+        <div class="slideshow-container">
+
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="./asset/pic1.jpg" style="width:100%">
+              <div class="text">Bienvenue dans notre restaurant !</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="./asset/pic2.jpg" style="width:100%">
+              <div class="text">ici on a de la qualité</div>
+            </div>
+          
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="./asset/pic3.jpg" style="width:100%">
+              <div class="text">C'est un vrai delice !</div>
+            </div>
+          
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+          <br>
+          
+          <!-- The dots/circles -->
+          <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
+    </section>
+    <section>
+      <div class="p1">
+        <p class="white">Le restaurant « L’élégance » vous propose une cuisine multiculturelle,
+          dans un cadre chic et agréable.</p>
+      </div>
+      <div class="the3pic">
+        <img src="./asset/pic4.jpg">
+        <img src="./asset/pic5.jpg">
+        <img src="./asset/pic6.jpg">
+      </div>
+      <div class="title">
+        <h3 class="white">Le restaurant</h3>
+      </div>
+      <div class="data white">
+        <p>Situé dans le centre-ville de Nantes, Place Graslin, le restaurant « L’élégance » saura vous émerveiller avec son cadre unique.</p>
+        <br>
+        <p>« L’élégance » vous propose un large choix de plats à déguster.</p>
+        <br>
+        <p>
+          Notre chef vous surprendra à coup sûr par sa cuisine variée et créative.
+          Il sublime les produits locaux qu’il a soigneusement sélectionnés auprès de producteurs de nos régions..
+        </p>
+        <br>
+        <p>
+          Tous vos goûts seront comblés avec un large éventail de plats naviguant entre un burger, notre dos de cabillaud ou encore nos savoureuses pizzas italiennes …
+        </p>
+      </div>
+      <div class="title">
+        <h3 class="white">Nos valeurs</h3>
+      </div>
+      <div class="title2">
+        <h3 class="white">
+          . Passion .
+        </h3>
+      </div>
+      <div class="data">
+        <p class="white">Le métier de restaurateur est avant tout un métier de passionnés.
+          Le goût du travail bien fait est le moteur de toutes nos décisions,
+          du temps passé à élaborer une nouvelle carte jusqu’à l’accueil de nos clients.
+          Nous aimons les produits avec lesquels nous travaillons et nous aimons nos clients.
+          En d’autres termes, la passion nous fédère autour du succès de l’établissement et de la satisfaction des convives.
+        </p>
+      </div>
+      <div class="mapBox">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2625.5400446749118!2d2.346278715025046!3d48.847911509399516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671e66f7bbeed%3A0xb1743d34a22b6539!2sAu%20Bistrot%20de%20la%20Montagne!5e0!3m2!1sfr!2sma!4v1647292643023!5m2!1sfr!2sma"   allowfullscreen="" loading="lazy">
+      </iframe>
+      </div>
+      <div class="title2">
+        <h3 class="white">
+          . Convivialité .
+        </h3>
+      </div>
+      <div class="data">
+        <p class="white">
+          En plus de proposer une cuisine d’excellente qualité,
+          nous sommes animés par l’envie de créer une atmosphère chaleureuse et intimiste.
+          Nous souhaitons que chaque personne qui passe notre porte se sente comme chez elle.
+          Oublions le protocole strict des grands restaurants,
+          ici nous servons de la haute gastronomie avec gentillesse et générosité.
+        </p>
+      </div>
+      <div class="title2">
+        <h3 class="white">
+          . Innovation .
+        </h3>
+      </div>
+      <div class="data">
+        <p class="theLastParagraph white">
+          L’innovation est au cœur de l’élaboration des plats de « L’élégance ».
+          Nos chefs n’ont pas peur de repousser les frontières de leur savoir-faire pour surprendre les papilles des convives.
+          Ils savent s’adapter aux tendances et aux changements.
+        </p>
+      </div>
+      <footer>
+        <div class="location">
+          <p class="locationTitle">NOUS TROUVER :</p>
+          <div class="locationContainer">
+            <img src="./asset/location.png" alt="">
+            <p>4 rue du Château <br>
+              44000 Nantes</p>
+          </div>
+          <div class="locationContainer">
+            <img src="./asset/telephone.png" alt="">
+            <a href="tel:+6494461709">6494461709</a>
+          </div>
+        </div>
+        <div class="workTime">
+          <p class="workTimeTitle">HEURES D’OUVERTURE :</p>
+          <p class="dataOfWorkTime">Lundi au Vendredi : 11h45/14h et 19h/23h</p>
+          <p class="dataOfWorkTime">Samedi : 11h45/14h et 19h/00h</p>
+          <p class="dataOfWorkTime">Fermé le dimanche</p>
+        </div>
+        <div class="media">
+          <p>RETROUVEZ-NOUS <br>
+            SUR LES RÉSEAUX SOCIAUX :
+          </p>
+          <div class="mediaContainer">
+            <a href="#">
+              <img src="./asset/facebook.png" alt="">
+            </a>
+            <a href="#">
+              <img src="./asset/instagram.png" alt="">
+            </a>
+            <a href="#">
+              <img src="./asset/linkedin.png" alt="">
+            </a>
+          </div>
+        </div>
+      </footer>
+    </section>
+  </body>
+  <script async src="./js/slider.js"></script>
+  <script async src="./js/lightbox.js"></script>
+  <!-- <script src="./js/emoji.js" defer></script> -->
+  <script src="./js/header.js"></script>
+</html>

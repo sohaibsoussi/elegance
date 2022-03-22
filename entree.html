@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style/header.css">
+    <link rel="stylesheet" href="./style/index.css">
+    <link rel="icon" href="./asset/logo.png" type="png"> 
+    <!-- <script async src="./js/header.js"></script>  --> 
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.4.1/lib/p5.js"></script>
+    <script src="./js/sketch.js"></script>  
+    <title>Entrées</title>
+    <style>
+        .imgEtTxt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+        }
+        .imgEtTxt img {
+            width: 40%;
+            height: 90vh;
+            object-fit: cover;
+        }
+        .Title{
+            display: flex;
+            justify-content:center;
+            align-items: center;
+            margin-top: 100px;
+        }
+        .Title h1{
+            margin: 17px;
+        }
+        .Title .ligne{
+            height: 2px;
+            width: 100px;
+            background-color: #D9BC8A;
+        }
+        .title {
+            margin: 22px 15px 25px 15px;
+        }
+        .txtArea2 {
+            display: flex;
+            align-content: stretch;
+            flex-wrap: wrap;
+            flex-direction: row-reverse;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .txtArea2 {
+            margin: 0px 160px 0px 160px;
+            text-align: center;
+        }
+        p.content,.retour{
+          margin-top: 14px;
+          text-decoration: none;
+        }
+        .retour{
+          color:#a6ceddc7;
+          transition: all 1s ease;
+        }
+        .retour:hover{
+          color:#c0c1c2;
+        }
+        @media all and (max-width:991px){
+          .imgEtTxt img {
+            display: none;
+          }
+          .imgEtTxt {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            color: aliceblue;
+            height: 100vh;
+            background: url(./asset/pic9.jpg) no-repeat center/cover,linear-gradient(transparent,#145C76);
+            background-blend-mode: screen;
+          }
+          .txtArea2 {
+            margin: 10px;
+          }
+          .retour{
+            color:#ffffffea;
+            transition: all 1s ease;
+          }
+        }
+    </style>
+    <script src="./js/header.js"></script>
+</head>
+<body>
+  <header>
+    <a href="./index.html">
+        <img src="./asset/logo.png" class="logo" alt="logo du resto">
+    </a>
+    <ul class="navigation">
+        <li id="link1"><a href="index.html">Le restaurant</a></li>
+        <li id="link2"><a href="#">Notre carte</a></li>
+        <li id="link3"><a href="contact.html">Contacter-nous</a></li>
+    </ul>
+    <div class="toggle" onclick="toggleMenu()"></div>
+  </header>  
+    <section>
+        <div class="imgEtTxt">
+            <img src="./asset/pic11.jpg" alt="">
+            <div class="txtArea1">
+                <div class="Title">
+                    <div class="ligne"></div>
+                    <h1 class="white">Notre carte</h1>
+                    <div class="ligne"></div>
+                </div>
+                <div class="txtArea2 white">
+                  <p class="content">
+                    Velouté d’aubergine et petits légumes
+                  </p>
+                  <p class="content">
+                    Découvrez notre velouté d’aubergine, servi avec poivrons, tomates et basilic.
+                  </p>
+                  <a href="./carte.html" class="retour">Retour à la carte</a>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="location">
+              <p class="locationTitle">NOUS TROUVER :</p>
+              <div class="locationContainer">
+                <img src="./asset/location.png" alt="location logo">
+                <p>4 rue du Château <br>
+                  44000 Nantes</p>
+              </div>
+              <div class="locationContainer">
+                <img src="./asset/telephone.png" alt="telephone logo">
+                <a href="tel:+6494461709">6494461709</a>
+              </div>
+            </div>
+            <div class="workTime">
+              <p class="workTimeTitle">HEURES D’OUVERTURE :</p>
+              <p class="dataOfWorkTime">Lundi au Vendredi : 11h45/14h et 19h/23h</p>
+              <p class="dataOfWorkTime">Samedi : 11h45/14h et 19h/00h</p>
+              <p class="dataOfWorkTime">Fermé le dimanche</p>
+            </div>
+            <div class="media">
+              <p>RETROUVEZ-NOUS <br>
+                SUR LES RÉSEAUX SOCIAUX :
+              </p>
+              <div class="mediaContainer">
+                <a href="#">
+                  <img src="./asset/facebook.png" alt="facebook">
+                </a>
+                <a href="#">
+                  <img src="./asset/instagram.png" alt="instagram logo">
+                </a>
+                <a href="#">
+                  <img src="./asset/linkedin.png" alt="linkedin logo">
+                </a>
+              </div>
+            </div>
+          </footer>
+    </section> 
+</body>
+</html>
