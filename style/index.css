@@ -41,7 +41,7 @@ section:nth-child(2){
     -webkit-text-stroke: 0.4px rgba(255, 255, 255, 0.623);
 }
 .blue{
-    color: #1d94c0c9;
+    color: #236279;
 }
 .p1 {
     font-weight: 400;
@@ -227,11 +227,13 @@ main {
     align-items: center;
     height: 100vh;
     position: fixed;
-    top :0;
+    top: 0;
     left: 0;
+    opacity: 0.2;
     width: 100%;
-    background: burlywood;
+    background: rgb(0, 0, 0);
     z-index: -1;
+    filter: grayscale(1);
 }
 canvas#defaultCanvas0 {
     width: 100%;
@@ -259,7 +261,6 @@ canvas#defaultCanvas0 {
     .data {
         text-align: start;
         padding: 20px 20px;
-        box-shadow: 0 0.2rem 0.8rem 0.1rem hsl(0deg 6% 10% / 11%), 0 0.1rem 0.1rem 0 #50717c;
     }
     .the3pic img {
         height: 340px;
@@ -316,7 +317,7 @@ canvas#defaultCanvas0 {
         position: relative;
         height: 400px;
         width: 91%;
-        background: #63443267;
+        background: #83838367;
         margin-bottom: 18px;
     }
     .numbertext {
