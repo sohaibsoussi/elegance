@@ -49,7 +49,10 @@
               <p class="white">Votre message</p>
               <textarea class="caret" name="data[description]" required minlength="20" lang="fr"></textarea>
           </div>
-          <input type="submit" name="" class="button" value="Envoyer">
+          <input type="submit" name="" class="button" value="Envoyer" class="g-recaptcha" 
+          data-sitekey="6Lcn0xIfAAAAAIcaFCPgE-YFW2QI-lXjIFyb9hTB" 
+          data-callback='onSubmit' 
+          data-action='submit'>
         </form>
 
 
@@ -108,4 +111,21 @@
       });
   });
   </script>
+     <script src="https://www.google.com/recaptcha/api.js"></script>
+   <script>
+    function onSubmit(token) {
+      document.getElementById("sheetdb-form").submit();
+    }
+  </script>
+  <script src="https://www.google.com/recaptcha/api.js?render=6Lcn0xIfAAAAAIcaFCPgE-YFW2QI-lXjIFyb9hTB"></script>
+  <script>
+    function onClick(e) {
+      e.preventDefault();
+      grecaptcha.ready(function() {
+        grecaptcha.execute('6Lcn0xIfAAAAAIcaFCPgE-YFW2QI-lXjIFyb9hTB', {action: 'submit'}).then(function(token) {
+            // Add your logic to submit to your backend server here.
+        });
+      });
+    }
+</script> 
 </html>
